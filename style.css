@@ -1,0 +1,99 @@
+html {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: url('bg.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.black {
+    z-index: 100;
+    height: 120%;
+    width: 120%;
+    position: fixed;
+    top: -50px;
+    left: -50px;
+    background-color: #000;
+    animation: fadein 6s;
+    -webkit-animation: fadein 6s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: .7;}
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: .7;}
+}
+
+h1 {
+    z-index: 200;
+    font-family: Helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+    font-size: 70px;
+    letter-spacing: -3px;
+    position: relative;
+    top: 30vh;
+    color: white;
+    animation: fadetitle 5s;
+    -webkit-animation: fadetitle 5s;
+}
+
+@keyframes fadetitle {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes fadetitle {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+h2 {
+    z-index: 200;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    position: relative;
+    top: 30vh;
+    color: #888;
+    animation: fadetitle 3s;
+    -webkit-animation: fadetitle 3s;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+footer {
+    z-index: 200;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -250px;
+    text-align: center;
+    width: 500px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    opacity: .4;
+}
+
+a {
+    text-decoration: none;
+    color: #3293d2;
+}
